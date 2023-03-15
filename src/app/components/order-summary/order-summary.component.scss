@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.text-content {
+    padding: 7%;
+}
+
+.title {
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.text-content p.sub-title {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.music {
+    background-color:hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.annual-plan{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.annual-plan div{
+    margin-left: 20px;
+}
+
+.annual-plan div h5 {
+    font-weight: 900;
+    font-size: 15px;
+    color: hsl(223, 47%, 23%);
+}
+.annual-plan div p {
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(223, 47%, 23%);
+}
+
+.music a {
+    font-weight: 900;
+    color:  hsl(223, 47%, 23%);;
+}
+
+a.confirm-btn {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+a.cancel-btn {
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    text-decoration: none;
+}
+
+a.confirm-btn:hover {
+    background-color:hsl(224, 23%, 55%);
+    transition: background-color .3s ease;
+}
+
+a.cancel-btn:hover {
+    color:hsl(223, 47%, 23%);
+    transition: color .3s ease;
+}
+
+.music a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%);
+    transition: color .3s ease;
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        max-width: 87%;
+    }
+
+    .title {
+        font-size: 23px;
+    }
+
+    div.annual-plan{
+        padding: 12px;
+    }
+
+    .annual-plan div {
+        margin-left: 10px;
+    }
+
+    a.confirm-btn,
+    a.cancel-btn,
+    .annual-plan a {
+        font-size: 13px;
+    }
+
+    .text-content {
+        padding: 9% 7%;
+    }
+}
